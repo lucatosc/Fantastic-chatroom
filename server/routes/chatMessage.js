@@ -8,3 +8,4 @@ router.post("/", createMessage);
 router.get("/:chatRoomId", getMessages);
 
 export default router;
+    
