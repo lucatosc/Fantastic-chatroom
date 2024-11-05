@@ -25,7 +25,7 @@ export const getChatRoomOfUser = async (req, res) => {
     res.status(404).json({
       message: error.message,
     });
-  }
+  }   
 };
 
 export const getChatRoomOfUsers = async (req, res) => {
