@@ -46,14 +46,14 @@ export const getAllUsers = async () => {
 };
 
 export const getUser = async (userId) => {
-  // const header = await createHeader();
+  const header = await createHeader();
 
-  // try {
-  //   const res = await axios.get(`${baseURL}/user/${userId}`, header);
-  //   return res.data;
-  // } catch (e) {
-  //   console.error(e);
-  // }
+  try {
+    const res = await axios.get(`${baseURL}/user/${userId}`, header);
+    return res.data;
+  } catch (e) {
+    console.error(e);
+  }
 };
 
 export const getUsers = async (users) => {
