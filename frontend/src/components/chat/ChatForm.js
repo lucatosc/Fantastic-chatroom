@@ -14,16 +14,16 @@ export default function ChatForm(props) {
     scrollRef.current?.scrollIntoView();
   }, [showEmojiPicker]);
 
-  const handleEmojiClick = (event, emojiObject) => {
-    let newMessage = message + emojiObject.emoji;
-    setMessage(newMessage);
-  };
-
   const handleFormSubmit = async (e) => {
     e.preventDefault();
 
     props.handleFormSubmit(message);
     setMessage("");
+  };
+
+  const handleEmojiClick = (event, emojiObject) => {
+    let newMessage = message + emojiObject.emoji;
+    setMessage(newMessage);
   };
       
   return (
